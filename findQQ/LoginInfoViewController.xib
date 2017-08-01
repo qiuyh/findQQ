@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginInfoViewController">
+            <connections>
+                <outlet property="tableView" destination="gRd-5m-CQw" id="9hR-Jt-zAz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1L8-iq-nlM">
+                    <rect key="frame" x="8" y="24" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Idm-25-6gX"/>
+                        <constraint firstAttribute="width" constant="46" id="qD4-0X-XOH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="返回"/>
+                    <connections>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="8si-mb-4wH"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gRd-5m-CQw">
+                    <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="3m3-c0-ZeT"/>
+                        <outlet property="delegate" destination="-1" id="K22-h6-WnO"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="gRd-5m-CQw" secondAttribute="bottom" id="87i-7b-3za"/>
+                <constraint firstItem="gRd-5m-CQw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="AhC-JC-JI7"/>
+                <constraint firstItem="1L8-iq-nlM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="24" id="Yqg-B8-q4d"/>
+                <constraint firstAttribute="trailing" secondItem="gRd-5m-CQw" secondAttribute="trailing" id="ZqJ-kJ-d2p"/>
+                <constraint firstItem="gRd-5m-CQw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="hAF-xr-ghs"/>
+                <constraint firstItem="1L8-iq-nlM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="hly-Ry-B3s"/>
+            </constraints>
+            <point key="canvasLocation" x="35" y="53"/>
+        </view>
+    </objects>
+</document>
